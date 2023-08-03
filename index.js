@@ -44,16 +44,7 @@ app.post("/usersignup", (req, res) => {
   con.connect(function (err) {
     if (err) throw err;
     console.log("Connected! Signup User");
-    // var sql = "INSERT INTO details (username, name,age, gender, interests, phoneno, country, maritalstat, work, prefferedage, city, religion, caste, height, description, hobbies) VALUES ('pathan77', ' "+a+" ', '', '', '', '', '', '', '', '', '', '', '', '', '','')";
-    // var sql =
-    //   "INSERT INTO userlogin (fullname,phone,password) VALUES ('" +
-    //   name +
-    //   "' ,'" +
-    //   number +
-    //   "' , '" 
-    //   password +
-    //   "'"+
-    //   ")";
+
     var sql = "INSERT INTO userlogin (fullname, phone, password) VALUES (?, ?, ?)";
     con.query(sql, [name, number, password], function (err, result) {
       if (err) {
@@ -360,7 +351,7 @@ app.post("/useralltickets", (req, res) => {
     con.query(sql, params, (error, results) => {
       if (error) {
         console.error("Error executing the query:", error);
-        con.end(); // Close the database connection
+        con.end(); // Close the database con
         return;
       }
 
@@ -371,7 +362,7 @@ app.post("/useralltickets", (req, res) => {
         res.send("0");
       }
 
-      con.end(); // Close the database connection
+      con.end(); // Close the database con
     });
   });
 });
@@ -410,7 +401,7 @@ app.post("/historyalltickets", (req, res) => {
     con.query(sql, (error, results) => {
       if (error) {
         console.error("Error executing the query:", error);
-        connection.end(); // Close the database connection
+        con.end(); // Close the database con
         return;
       }
 
@@ -459,7 +450,7 @@ app.post("/Companyhistoryalltickets", (req, res) => {
     con.query(sql, (error, results) => {
       if (error) {
         console.error("Error executing the query:", error);
-        connection.end(); // Close the database connection
+        con.end(); // Close the database con
         return;
       }
 
@@ -524,7 +515,7 @@ app.post("/resetpassword", (req, res) => {
     con.query(sql, (error, results) => {
       if (error) {
         console.error("Error executing the query:", error);
-        connection.end(); // Close the database connection
+        con.end(); // Close the database con
         return;
       }
       console.log("RES " + JSON.stringify(results));
@@ -571,7 +562,7 @@ app.post("/companyalltickets", (req, res) => {
     con.query(sql, (error, results) => {
       if (error) {
         console.error("Error executing the query:", error);
-        connection.end(); // Close the database connection
+        con.end(); // Close the database con
         return;
       }
 
@@ -626,7 +617,7 @@ function setnoti(id) {
     con.query(sql, (error, results) => {
       if (error) {
         console.error("Error executing the query Notifications:", error);
-        con.end(); // Close the database connection
+        con.end(); // Close the database con
         return;
       }
       else {
@@ -668,7 +659,7 @@ app.post("/getnotifications", (req, res) => {
     con.query(sql, (error, results) => {
       if (error) {
         console.error("Error executing the query:", error);
-        con.end(); // Close the database connection
+        con.end(); // Close the database con
         return;
       }
 
@@ -723,7 +714,7 @@ app.post("/businessTickets", (req, res) => {
     con.query(sql, (error, results) => {
       if (error) {
         console.error("Error executing the query:", error);
-        connection.end(); // Close the database connection
+        con.end(); // Close the database con
         return;
       }
 
@@ -770,7 +761,7 @@ app.post("/cancelTickets", (req, res) => {
     con.query(sql, (error, results) => {
       if (error) {
         console.error("Error executing the query:", error);
-        connection.end(); // Close the database connection
+        con.end(); // Close the database con
         return;
       }
 
@@ -882,9 +873,9 @@ app.post("/bookticket", (req, res) => {
 
       con.end((err) => {
         if (err) {
-          console.error('Error closing the connection:', err);
+          console.error('Error closing the con:', err);
         } else {
-          console.log('Connection closed.');
+          console.log('con closed.');
         }
         return res.status(200).json({ message: 'Ticket Booked!' });
       });
@@ -960,7 +951,7 @@ function sendnoti(t) {
     con.query(sql, (error, results) => {
       if (error) {
         console.error("Error executing the query:", error);
-        con.end(); // Close the database connection
+        con.end(); // Close the database con
         return;
       }
 
@@ -974,7 +965,7 @@ function sendnoti(t) {
         const sql2 =
           "INSERT INTO notifications (userid, body, status) VALUES (?, ?, ?);";
 
-        // Assuming you have a MySQL connection 'con' already established
+        // Assuming you have a MySQL con 'con' already established
         con.query(sql1, [first, `Ticket Has Been Cancelled Ticket id ${t}`, 0], (error, result1) => {
           if (error) {
             console.error("Error executing the first query:", error);
