@@ -37,7 +37,7 @@ app.post("/usersignup", (req, res) => {
     user: "u4qqcbihzzmqthct",
     password: "NOhpjqlJut072CUFfi63",
     database: "bzmcqjfthcfyomdr29nk",
-    timeout: 60000,
+    
 
   });
 
@@ -92,7 +92,7 @@ app.post("/companysignup", (req, res) => {
     user: "u4qqcbihzzmqthct",
     password: "NOhpjqlJut072CUFfi63",
     database: "bzmcqjfthcfyomdr29nk",
-    timeout: 60000,
+    
 
   });
   con.connect(function (err) {
@@ -141,7 +141,7 @@ app.post("/logout", (req, res) => {
     user: "u4qqcbihzzmqthct",
     password: "NOhpjqlJut072CUFfi63",
     database: "bzmcqjfthcfyomdr29nk",
-    timeout: 60000,
+    
 
   });
   const auth = 0;
@@ -228,7 +228,7 @@ app.post("/checkcompanycredentials", (req, res) => {
     user: "u4qqcbihzzmqthct",
     password: "NOhpjqlJut072CUFfi63",
     database: "bzmcqjfthcfyomdr29nk",
-    timeout: 60000,
+    
 
   });
   const auth = 0;
@@ -281,7 +281,7 @@ app.post("/checkcredentialsusers", (req, res) => {
     user: "u4qqcbihzzmqthct",
     password: "NOhpjqlJut072CUFfi63",
     database: "bzmcqjfthcfyomdr29nk",
-    timeout: 60000,
+    
 
   });
 
@@ -331,7 +331,7 @@ app.post("/useralltickets", (req, res) => {
     user: "u4qqcbihzzmqthct",
     password: "NOhpjqlJut072CUFfi63",
     database: "bzmcqjfthcfyomdr29nk",
-    timeout: 60000,
+    
 
   });
 
@@ -397,7 +397,7 @@ app.post("/historyalltickets", (req, res) => {
     user: "u4qqcbihzzmqthct",
     password: "NOhpjqlJut072CUFfi63",
     database: "bzmcqjfthcfyomdr29nk",
-    timeout: 60000,
+    
 
   });
   const auth = 0;
@@ -445,7 +445,7 @@ app.post("/Companyhistoryalltickets", (req, res) => {
     user: "u4qqcbihzzmqthct",
     password: "NOhpjqlJut072CUFfi63",
     database: "bzmcqjfthcfyomdr29nk",
-    timeout: 60000,
+    
 
   });
   const auth = 0;
@@ -496,7 +496,7 @@ app.post("/resetpassword", (req, res) => {
     user: "u4qqcbihzzmqthct",
     password: "NOhpjqlJut072CUFfi63",
     database: "bzmcqjfthcfyomdr29nk",
-    timeout: 60000,
+    
 
   });
   const auth = 0;
@@ -558,7 +558,7 @@ app.post("/companyalltickets", (req, res) => {
     user: "u4qqcbihzzmqthct",
     password: "NOhpjqlJut072CUFfi63",
     database: "bzmcqjfthcfyomdr29nk",
-    timeout: 60000,
+    
 
   });
   const auth = 0;
@@ -613,7 +613,7 @@ function setnoti(id) {
     user: "u4qqcbihzzmqthct",
     password: "NOhpjqlJut072CUFfi63",
     database: "bzmcqjfthcfyomdr29nk",
-    timeout: 60000,
+    
 
   });
   const auth = 0;
@@ -655,7 +655,7 @@ app.post("/getnotifications", (req, res) => {
     user: "u4qqcbihzzmqthct",
     password: "NOhpjqlJut072CUFfi63",
     database: "bzmcqjfthcfyomdr29nk",
-    timeout: 60000,
+    
 
   });
   const auth = 0;
@@ -710,7 +710,7 @@ app.post("/businessTickets", (req, res) => {
     user: "u4qqcbihzzmqthct",
     password: "NOhpjqlJut072CUFfi63",
     database: "bzmcqjfthcfyomdr29nk",
-    timeout: 60000,
+    
 
   });
   const auth = 0;
@@ -756,7 +756,7 @@ app.post("/cancelTickets", (req, res) => {
     user: "u4qqcbihzzmqthct",
     password: "NOhpjqlJut072CUFfi63",
     database: "bzmcqjfthcfyomdr29nk",
-    timeout: 60000,
+    
 
   });
   const auth = 0;
@@ -808,7 +808,7 @@ app.post("/delticket", (req, res) => {
     user: "u4qqcbihzzmqthct",
     password: "NOhpjqlJut072CUFfi63",
     database: "bzmcqjfthcfyomdr29nk",
-    timeout: 60000,
+    
 
   });
   const auth = 0;
@@ -861,7 +861,7 @@ app.post("/bookticket", (req, res) => {
     user: "u4qqcbihzzmqthct",
     password: "NOhpjqlJut072CUFfi63",
     database: "bzmcqjfthcfyomdr29nk",
-    timeout: 60000,
+    
 
   });
   const auth = 0
@@ -913,7 +913,7 @@ app.post("/markdone", (req, res) => {
     user: "u4qqcbihzzmqthct",
     password: "NOhpjqlJut072CUFfi63",
     database: "bzmcqjfthcfyomdr29nk",
-    timeout: 60000,
+    
 
   });
   const auth = 0;
@@ -947,7 +947,7 @@ function sendnoti(t) {
     user: "u4qqcbihzzmqthct",
     password: "NOhpjqlJut072CUFfi63",
     database: "bzmcqjfthcfyomdr29nk",
-    timeout: 60000,
+    
 
   });
 
