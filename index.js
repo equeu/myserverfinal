@@ -55,6 +55,7 @@ app.post("/usersignup", (req, res) => {
         // Success
         console.log("New user added:", result.insertId);
         res.send("New user added");
+        res.status(200);
       }
       con.end();
     });
@@ -99,6 +100,7 @@ app.post("/companysignup", (req, res) => {
 
       console.log("Company registered successfully!");
       res.send("Company registered successfully!");
+      res.status(200);
     });
 
     con.end();
