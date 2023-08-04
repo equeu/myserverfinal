@@ -771,8 +771,9 @@ app.post("/cancelTickets", (req, res) => {
       if (results.length > 0) {
         res.json(results);
         con.end();
+        sendnoti(ticket);
         return res.status(200).json({ message: 'Ticket cancelled!' });
-         sendnoti(ticket);
+         
       } 
       else {
         res.send("0");
